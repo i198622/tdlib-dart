@@ -75,8 +75,9 @@ class JsonBindings {
       return 'tdjson.dll';
     } else if (Platform.isLinux) {
       return 'libtdjson.so';
+    } else {
+      return 'libtdjson.so';
     }
-    throw UnsupportedError('Unsupported for current platform');
   }
 
   String _resolveFuncName(String name) =>
